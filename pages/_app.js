@@ -78,14 +78,14 @@ function MyApp({ Component, pageProps }) {
 
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-XPGYPL8LEN"
+        src="https://www.googletagmanager.com/gtag/js?id=G-L9BJ3REBTX"
       />
 
       <Script id="gtm-script" strategy="afterInteractive">
         {` window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XPGYPL8LEN');`}
+        gtag('config', 'G-L9BJ3REBTX');`}
       </Script>
 
       <AuthContextProvider>

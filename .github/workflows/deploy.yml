@@ -29,13 +29,13 @@ jobs:
         env:
           HOST: ${{ secrets.HOST }}
           USERNAME: root
-          TARGET_DIR: /home/nextjs/CumCraze
-          APP_NAME: CumCraze
-          PORT: 3002
+          TARGET_DIR: /home/nextjs/LuvGalore
+          APP_NAME: LuvGalore
+          PORT: 3010
         run: |
           ssh -o StrictHostKeyChecking=no $USERNAME@$HOST << 'EOF'
-            export TARGET_DIR="/home/nextjs/CumCraze"
-            export APP_NAME="CumCraze"
+            export TARGET_DIR="/home/nextjs/LuvGalore"
+            export APP_NAME="LuvGalore"
             export PORT="3001"
 
             # Load NVM

@@ -31,7 +31,7 @@ jobs:
           USERNAME: root
           TARGET_DIR: /home/nextjs/LuvGalore
           APP_NAME: LuvGalore
-          PORT: 3010
+          PORT: 3011
         run: |
           ssh -o StrictHostKeyChecking=no $USERNAME@$HOST << 'EOF'
             export TARGET_DIR="/home/nextjs/LuvGalore"

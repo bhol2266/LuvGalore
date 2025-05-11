@@ -34,16 +34,16 @@ function Search({ video_collection, pages }) {
         <>
             <Head>
 
-                <title>{`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze | ${currentPageNumberURL}`}</title>
+                <title>{`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore | ${currentPageNumberURL}`}</title>
 
-                <meta name="description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on CumCraze!`} />
+                <meta name="description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on LuvGalore!`} />
 
 
-                <meta property="og:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze | ${currentPageNumberURL}`} />
-                <meta property="og:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on CumCraze!`} />
-                <meta name="twitter:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze | ${currentPageNumberURL}`} />
-                <meta name="twitter:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on CumCraze!`} />
-                <link rel="canonical" href={`https://www.cumcraze.com/search/${searchkey}/page/${page}`} />
+                <meta property="og:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore | ${currentPageNumberURL}`} />
+                <meta property="og:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on LuvGalore!`} />
+                <meta name="twitter:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore | ${currentPageNumberURL}`} />
+                <meta name="twitter:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on LuvGalore!`} />
+                <link rel="canonical" href={`https://www.LuvGalore.com/search/${searchkey}/page/${page}`} />
 
 
 

@@ -74,15 +74,15 @@ function Index({ video_collection, pages, pornstarInformation, collageImages }) 
 
 <Head>
 
-<title>{`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze | ${currentPageNumberURL}`}</title>
+<title>{`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore | ${currentPageNumberURL}`}</title>
 
 <meta name="description" content={`Find nude ${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} porn videos featuring the porn star fucks in XXX scenes, including amateur, anal, blowjob!`} />
-<meta name="keywords" content="porn, xxx, streaming porn, HD porn, HD adult videos, HD pussy videos, sex movies, Cumcraze" />
-<meta property="og:title" content={`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze`} />
+<meta name="keywords" content="porn, xxx, streaming porn, HD porn, HD adult videos, HD pussy videos, sex movies, LuvGalore" />
+<meta property="og:title" content={`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore`} />
 <meta property="og:description" content={`Find nude ${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} porn videos featuring the porn star fucks in XXX scenes, including amateur, anal, blowjob!`} />
-<meta name="twitter:title" content={`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze`} />
+<meta name="twitter:title" content={`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore`} />
 <meta name="twitter:description" content={`Find nude ${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} porn videos featuring the porn star fucks in XXX scenes, including amateur, anal, blowjob!`} />
-<link rel="canonical" href={`https://www.Cumcraze.com/pornstar/${code}/${pornstarname}/page/${page}`} />
+<link rel="canonical" href={`https://www.LuvGalore.com/pornstar/${code}/${pornstarname}/page/${page}`} />
 
 
 

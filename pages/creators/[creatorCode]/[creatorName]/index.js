@@ -93,14 +93,14 @@ function Index({ video_collection, pages, creatorData, collageImages }) {
 
             <Head>
                 <title>{`${capitalizeFirstLetter(creatorData.creatorName.replace('+', " ").replace("+", " "))
-                    } Porn Videos - Cumcraze`}</title>
+                    } Porn Videos - LuvGalore`}</title>
                 <meta name="description" content={`Check out the best porn videos and playlists from channel ${capitalizeFirstLetter(creatorData.creatorName.replace('+', " ").replace("+", " "))} `} />
-                <meta name="keywords" content="porn, xxx, streaming porn, HD porn, HD adult videos, HD pussy videos, sex movies, Cumcraze" />
-                <meta property="og:title" content={`${capitalizeFirstLetter(creatorData.creatorName.replace('+', " ").replace("+", " "))} Porn Videos - Cumcraze`} />
+                <meta name="keywords" content="porn, xxx, streaming porn, HD porn, HD adult videos, HD pussy videos, sex movies, LuvGalore" />
+                <meta property="og:title" content={`${capitalizeFirstLetter(creatorData.creatorName.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore`} />
                 <meta property="og:description" content={`Check out the best porn videos and playlists from channel ${capitalizeFirstLetter(creatorData.creatorName.replace('+', " ").replace("+", " "))} `} />
-                <meta name="twitter:title" content={`${capitalizeFirstLetter(creatorData.creatorName.replace('+', " ").replace("+", " "))} Porn Videos - Cumcraze`} />
+                <meta name="twitter:title" content={`${capitalizeFirstLetter(creatorData.creatorName.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore`} />
                 <meta name="twitter:description" content={`Check out the best porn videos and playlists from channel ${capitalizeFirstLetter(creatorData.creatorName.replace('+', " ").replace("+", " "))} `} />
-                <link rel="canonical" href={`https://www.Cumcraze.com/channels/${creatorName}/${creatorCode}`} />
+                <link rel="canonical" href={`https://www.LuvGalore.com/channels/${creatorName}/${creatorCode}`} />
 
             </Head >
 

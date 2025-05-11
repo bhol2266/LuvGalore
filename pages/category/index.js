@@ -56,15 +56,15 @@ function Index() {
 
         <div className="basicMargin">
             <Head>
-                <title>Explore Porn Video Categories and a variety of Sex Niches on CumCraze</title>
-                <meta name="description" content="Check out our extensive list of all porn video categories on CumCraze, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
+                <title>Explore Porn Video Categories and a variety of Sex Niches on LuvGalore</title>
+                <meta name="description" content="Check out our extensive list of all porn video categories on LuvGalore, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
 
 
-                <meta property="og:title" content="Explore Porn Video Categories and a variety of Sex Niches on CumCraze" />
-                <meta property="og:description" content="Check out our extensive list of all porn video categories on CumCraze, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
-                <meta name="twitter:title" content="Explore Porn Video Categories and a variety of Sex Niches on CumCraze" />
-                <meta name="twitter:description" content="Check out our extensive list of all porn video categories on CumCraze, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
-                <link rel="canonical" href={`https://www.cumcraze.com/category`} />
+                <meta property="og:title" content="Explore Porn Video Categories and a variety of Sex Niches on LuvGalore" />
+                <meta property="og:description" content="Check out our extensive list of all porn video categories on LuvGalore, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
+                <meta name="twitter:title" content="Explore Porn Video Categories and a variety of Sex Niches on LuvGalore" />
+                <meta name="twitter:description" content="Check out our extensive list of all porn video categories on LuvGalore, featuring even the rarest sex niches. Discover the XXX videos that cater to your preferences!" />
+                <link rel="canonical" href={`https://www.LuvGalore.com/category`} />
 
 
 

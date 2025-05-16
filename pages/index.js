@@ -201,13 +201,12 @@ export default function Home({ finalDataArray, trendingChannels, tags, trendingP
     <div className=" ">
       <Head>
         <title>Watch hot porn videos for free at LuvGalore!</title>
-        <meta name="description" content="Looking for free porn videos and exclusive XXX movies? Look no further than LuvGalore. With instant streaming of over 6 million hardcore sex videos from both professionals and amateurs, our high-quality porn tube has everything you need to satisfy your desires. Whether you're looking for sensual solo scenes or wild group sex, LuvGalore has it all. Join us now and start exploring our vast collection of adult content." />
+        <meta name="description" content="LuvGalore offers a wide selection of free porn videos and exclusive XXX movies for your viewing pleasure. With over 6 million hardcore sex videos available for instant streaming, including content from professionals and amateurs, you'll find everything you need to fulfill your desires. Whether you prefer sensual solo scenes or wild group sex, LuvGalore has it all. Join us now to explore our extensive collection of adult content." />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="msvalidate.01" content="8A6530C78E46DD0011117B2ECB618480" />
         <meta property="og:title" content="Watch hot porn videos for free at LuvGalore!" />
-        <meta property="og:description" content="Looking for free porn videos and exclusive XXX movies? Look no further than LuvGalore. With instant streaming of over 6 million hardcore sex videos from both professionals and amateurs, our high-quality porn tube has everything you need to satisfy your desires. Whether you're looking for sensual solo scenes or wild group sex, LuvGalore has it all. Join us now and start exploring our vast collection of adult content." />
+        <meta property="og:description" content="LuvGalore offers a wide selection of free porn videos and exclusive XXX movies for your viewing pleasure. With over 6 million hardcore sex videos available for instant streaming, including content from professionals and amateurs, you'll find everything you need to fulfill your desires. Whether you prefer sensual solo scenes or wild group sex, LuvGalore has it all. Join us now to explore our extensive collection of adult content." />
         <link rel="canonical" href={`https://www.LuvGalore.com/`} />
-
       </Head>
 
 

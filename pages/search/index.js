@@ -82,17 +82,14 @@ function Search({ tags }) {
         <div className="basicMargin mt-3">
 
             <Head>
-                <title>Search Porn Videos, Discover Free XXX Movies Online | LuvGalore</title>
-                <meta name="description"
-                    content="LuvGalore is known as one of the most advanced porn video search engines, offering a wide variety of full-length hardcore sex movies, short XXX video clips, and high-quality adult tube scenes. Whatever type of porn video you desire, you can count on LuvGalore to deliver exactly what you're looking for!" />
-                G
-                <meta property="og:title" content="Search Porn Videos, Discover Free XXX Movies Online | LuvGalore" />
-                <meta property="og:description" content="LuvGalore is known as one of the most advanced porn video search engines, offering a wide variety of full-length hardcore sex movies, short XXX video clips, and high-quality adult tube scenes. Whatever type of porn video you desire, you can count on LuvGalore to deliver exactly what you're looking for!" />
-                <meta name="twitter:title" content="Search Porn Videos, Discover Free XXX Movies Online | LuvGalore" />
-                <meta name="twitter:description" content="LuvGalore is known as one of the most advanced porn video search engines, offering a wide variety of full-length hardcore sex movies, short XXX video clips, and high-quality adult tube scenes. Whatever type of porn video you desire, you can count on LuvGalore to deliver exactly what you're looking for!" />
+                <title>Search Adult Videos, Discover Free XXX Movies Online | LuvGalore</title>
+                <meta name="description" content="LuvGalore is a top-rated adult video search engine, offering a diverse selection of full-length hardcore sex movies, short XXX video clips, and high-quality adult tube scenes. Find the perfect adult video for you on LuvGalore!" />
+                <meta property="og:title" content="Search Adult Videos, Discover Free XXX Movies Online | LuvGalore" />
+                <meta property="og:description" content="LuvGalore is a top-rated adult video search engine, offering a diverse selection of full-length hardcore sex movies, short XXX video clips, and high-quality adult tube scenes. Find the perfect adult video for you on LuvGalore!" />
+                <meta name="twitter:title" content="Search Adult Videos, Discover Free XXX Movies Online | LuvGalore" />
+                <meta name="twitter:description" content="LuvGalore is a top-rated adult video search engine, offering a diverse selection of full-length hardcore sex movies, short XXX video clips, and high-quality adult tube scenes. Find the perfect adult video for you on LuvGalore!" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <link rel="canonical" href={`https://www.LuvGalore.com/search`} />
-
             </Head>
 
             <PopunderAds />

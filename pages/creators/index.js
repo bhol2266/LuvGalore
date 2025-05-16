@@ -118,20 +118,15 @@ function Index({ finalDataArray, pages }) {
             <div className='basicMargin'>
 
                 <Head>
-
-                    <title>Hot Porn Creators and Exclusive Adult Videos - LuvGalore</title>
-                    <meta name="description" content="The Hottest Japanese Porn Movies Divided By Channels! Discover on JAV HD the Best XXX JAV Channels & Free Sex Scenes: JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV" />
-                    <meta name="keywords" content="porn, xxx, streaming porn, HD porn, HD adult videos, HD pussy videos, sex movies, LuvGalore" />
-                    <meta property="og:title" content="Hot Porn Creators and Exclusive Adult Videos - LuvGalore" />
-                    <meta property="og:description" content="The Hottest Japanese Porn Movies Divided By Channels! Discover on JAV HD the Best XXX JAV Channels & Free Sex Scenes: JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV" />
-                    <meta name="twitter:title" content="Hot Porn Creators and Exclusive Adult Videos - LuvGalore" />
-                    <meta name="twitter:description" content="The Hottest Japanese Porn Movies Divided By Channels! Discover on JAV HD the Best XXX JAV Channels & Free Sex Scenes: JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV" />
-                    <link rel="canonical" href={`https://www.LuvGalore.com/creators`} />
-
-
-
-
-                </Head>
+                    <title>Exclusive Adult Videos and Top Porn Creators - LuvGalore</title>
+                    <meta name="description" content="Discover the hottest Japanese porn movies categorized by channels on LuvGalore! Explore the best XXX JAV channels and enjoy free sex scenes from JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV." />
+                    <meta name="keywords" content="porn, xxx, streaming porn, HD porn, adult videos, pussy videos, sex movies, LuvGalore" />
+                    <meta property="og:title" content="Exclusive Adult Videos and Top Porn Creators - LuvGalore" />
+                    <meta property="og:description" content="Discover the hottest Japanese porn movies categorized by channels on LuvGalore! Explore the best XXX JAV channels and enjoy free sex scenes from JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV." />
+                    <meta name="twitter:title" content="Exclusive Adult Videos and Top Porn Creators - LuvGalore" />
+                    <meta name="twitter:description" content="Discover the hottest Japanese porn movies categorized by channels on LuvGalore! Explore the best XXX JAV channels and enjoy free sex scenes from JAVHD, CARIBBEANCOM, JAVHUB, JAPANHDV." />
+                    <link rel="canonical" href="https://www.LuvGalore.com/creators" />
+                </Head> 
 
 
 

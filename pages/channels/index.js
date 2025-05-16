@@ -128,18 +128,13 @@ function Index({ video_collection, trendingChannels, newChannels }) {
             <div className='basicMargin'>
 
                 <Head>
-
                     <title>Top Porn Channels: Leading Sex Video Producers & Creators | LuvGalore</title>
-                    <meta name="description" content="Explore an extensive catalog of the top porn tube channels featuring talented sex video producers and XXX creators. Discover complimentary films from your preferred adult paysites on LuvGalore!" />
+                    <meta name="description" content="Discover the best porn channels with top sex video producers and creators. Watch complimentary films from your favorite adult paysites on LuvGalore!" />
                     <meta property="og:title" content="Top Porn Channels: Leading Sex Video Producers & Creators | LuvGalore" />
-                    <meta property="og:description" content="Explore an extensive catalog of the top porn tube channels featuring talented sex video producers and XXX creators. Discover complimentary films from your preferred adult paysites on LuvGalore!" />
+                    <meta property="og:description" content="Discover the best porn channels with top sex video producers and creators. Watch complimentary films from your favorite adult paysites on LuvGalore!" />
                     <meta name="twitter:title" content="Top Porn Channels: Leading Sex Video Producers & Creators | LuvGalore" />
-                    <meta name="twitter:description" content="Explore an extensive catalog of the top porn tube channels featuring talented sex video producers and XXX creators. Discover complimentary films from your preferred adult paysites on LuvGalore!" />
+                    <meta name="twitter:description" content="Discover the best porn channels with top sex video producers and creators. Watch complimentary films from your favorite adult paysites on LuvGalore!" />
                     <link rel="canonical" href={`https://www.LuvGalore.com/channels`} />
-
-
-
-
                 </Head>
 
 

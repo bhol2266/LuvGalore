@@ -84,15 +84,13 @@ function Index() {
 
         <div className="basicMargin mt-2">
             <Head>
-                <title>The Hottest Pornstars: Watch Free Top Porn Star Videos on LuvGalore</title>
-                <meta name="description" content="Discover the hottest adult film stars and models on the largest FREE adult tube at LuvGalore.com. Enjoy a wide selection of stunning babes ready to please you 24/7!" />
-
-                <meta property="og:title" content="The Hottest Pornstars: Watch Free Top Porn Star Videos on LuvGalore" />
-                <meta property="og:description" content="Discover the hottest adult film stars and models on the largest FREE adult tube at LuvGalore.com. Enjoy a wide selection of stunning babes ready to please you 24/7!" />
-                <meta name="twitter:title" content="The Hottest Pornstars: Watch Free Top Porn Star Videos on LuvGalore" />
-                <meta name="twitter:description" content="Discover the hottest adult film stars and models on the largest FREE adult tube at LuvGalore.com. Enjoy a wide selection of stunning babes ready to please you 24/7!" />
+                <title>Discover the Hottest Pornstars on LuvGalore: Watch Free Top Porn Star Videos</title>
+                <meta name="description" content="Explore the sexiest adult film stars and models on the largest FREE adult tube at LuvGalore.com. Enjoy a diverse selection of stunning babes available to please you anytime." />
+                <meta property="og:title" content="Discover the Hottest Pornstars on LuvGalore: Watch Free Top Porn Star Videos" />
+                <meta property="og:description" content="Explore the sexiest adult film stars and models on the largest FREE adult tube at LuvGalore.com. Enjoy a diverse selection of stunning babes available to please you anytime." />
+                <meta name="twitter:title" content="Discover the Hottest Pornstars on LuvGalore: Watch Free Top Porn Star Videos" />
+                <meta name="twitter:description" content="Explore the sexiest adult film stars and models on the largest FREE adult tube at LuvGalore.com. Enjoy a diverse selection of stunning babes available to please you anytime." />
                 <link rel="canonical" href={`https://www.LuvGalore.com/pornstar`} />
-
             </Head>
 
 
@@ -154,7 +152,7 @@ function Index() {
             </div>
 
 
-            { suggestedData.length == 0 &&
+            {suggestedData.length == 0 &&
                 <InfiniteScroll
                     dataLength={data.length}
                     next={fetchMoreData}

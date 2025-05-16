@@ -161,18 +161,18 @@ const Videoplayer = () => {
 
             {preloadedVideoQuality.length > 0 && !noVideo ? (
                 <>
-                    <Head>
+                     <Head>
                         <title>{`${noVideo ? videoTitleBackup : videoDetails.Title} - ${noVideo ? "720p" : videolinkQualitiesScreenshots.video_qualities_available[videolinkQualitiesScreenshots.video_qualities_available.length - 1].toUpperCase()}`} | LuvGalore</title>
-                        <meta name="description" content={`Watch ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on LuvGalore`} />
+                        <meta name="description" content={`Watch  ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on LuvGalore `} />
                         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                         <meta name="keywords" content={tagString} />
                         <meta property="og:title" content={`${noVideo ? videoTitleBackup : videoDetails.Title} - ${noVideo ? "720p" : videolinkQualitiesScreenshots.video_qualities_available[videolinkQualitiesScreenshots.video_qualities_available.length - 1].toUpperCase()}`} />
-                        <meta property="og:description" content={`Watch ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on LuvGalore`} />
+                        <meta property="og:description" content={`Watch  ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on LuvGalore `} />
                         <meta name="twitter:title" content={`${noVideo ? videoTitleBackup : videoDetails.Title} - ${noVideo ? "720p" : videolinkQualitiesScreenshots.video_qualities_available[videolinkQualitiesScreenshots.video_qualities_available.length - 1].toUpperCase()}`} />
-                        <meta name="twitter:description" content={`Watch ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on LuvGalore`} />
+                        <meta name="twitter:description" content={`Watch  ${capitalizeFirstLetter(noVideo ? videoTitleBackup : videoDetails.Title)} on LuvGalore `} />
                         <link rel="canonical" href={`https://www.LuvGalore.com/video/${video}`} />
-                    </Head>
 
+                    </Head>
                     <div className='flex text-sm md:text-lg basicMargin'>
                         <div className='flex items-center mt-2 space-x-1 lg:space-x-2'>
                             <FilmIcon className='h-[20px] md:h-9 hover:scale-100 text-red-600' />

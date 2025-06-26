@@ -1,22 +1,20 @@
-import { Scrape_Video_Item } from '@/config/Scrape_Video_Item';
+import { UserAuth } from "@/context/AuthContext";
 import { LinkIcon, PlusIcon } from '@heroicons/react/outline';
-import * as cheerio from 'cheerio';
+import { getCookie } from 'cookies-next';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from "next/router";
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BeatLoader } from 'react-spinners';
 import Pagination from '../../../../components/Pagination';
 import Header from '../../../../components/Pornstar_Channels/Header';
 import Videos from "../../../../components/Videos";
-import { UserAuth } from "@/context/AuthContext";
 import { checkSubscribedChannel, updateSubcribedChannels } from '../../../../config/firebase/lib';
-import { getCookie } from 'cookies-next';
 import { updateViewChannels_Cookie } from '../../../../config/utils';
 
 
 
-function Index({ video_collection, pages, channel_name, channel_link, collageImages, channel_subscriber, channel_by }) {
+function Index({ video_collection, pages, channel_name, channel_link, collageImages, channel_subscriber, channel_by, channel_image }) {
 
     const router = useRouter();
     const { code, channelname, isReady } = router.query
@@ -38,7 +36,7 @@ function Index({ video_collection, pages, channel_name, channel_link, collageIma
         const obj = {
             channelName: channel_name,
             href: `/${code}/channel/${channelname}/`,
-            imageUrl: `${process.env.CLOUDFLARE_STORAGE}Chutlunds_channels_images/${channel_name.trim().toLowerCase().replace(/ /g, "_").replace(/\+/g, "_")}.jpg`
+            imageUrl: channel_image
 
         }
 
@@ -57,7 +55,7 @@ function Index({ video_collection, pages, channel_name, channel_link, collageIma
         const obj = {
             channelName: channel_name,
             href: `/${code}/channel/${channelname}/`,
-            imageUrl: `${process.env.CLOUDFLARE_STORAGE}Chutlunds_channels_images/${channel_name.trim().toLowerCase().replace(/ /g, "_").replace(/\+/g, "_")}.jpg`
+            imageUrl: channel_image
 
         }
 
@@ -86,11 +84,12 @@ function Index({ video_collection, pages, channel_name, channel_link, collageIma
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
+
     return (
         <>
 
 
-<Head>
+            <Head>
                 <title>{`Free ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore`}</title>
                 <meta name="description" content={`Free ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos. Discover ${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} sex videos featuring porn stars fucking in XXX scenes, including amateur, anal, blowjob & more!`} />
                 <meta property="og:title" content={`${capitalizeFirstLetter(channel_name.replace('+', " ").replace("+", " "))} Porn Videos - LuvGalore`} />
@@ -128,7 +127,7 @@ function Index({ video_collection, pages, channel_name, channel_link, collageIma
                         <div>
                             <img
                                 className="object-cover w-36 h-36 lg:w-44 lg:h-44 rounded-[15px] border-[1px] border-gray-200"
-                                src={`${process.env.CLOUDFLARE_STORAGE}Chutlunds_channels_images/${channel_name.trim().toLowerCase().replace(/ /g, "_").replace(/\+/g, "_")}.jpg`}
+                                src={channel_image}
                                 alt={channel_name}
                                 loading="lazy"
                             />
@@ -214,30 +213,30 @@ export async function getStaticProps(context) {
     const { code, channelname } = context.params;
 
     const parcelData = { url: `https://spankbang.party/${code}/channel/${channelname}/` };
-        const API_URL = `${process.env.BACKEND_URL}getChannelVideos`;
-        const rawResponse = await fetch(API_URL, {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            method: 'POST',
-            body: JSON.stringify(parcelData),
-        });
+    const API_URL = `${process.env.BACKEND_URL}getChannelVideos`;
+    const rawResponse = await fetch(API_URL, {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        method: 'POST',
+        body: JSON.stringify(parcelData),
+    });
 
-        const { finalDataArray, pages, channel_name, channel_subscriber, channel_by, channel_link, collageImages } = await rawResponse.json();
-        return {
-            props: {
-                video_collection: finalDataArray,
-                pages: pages,
-                channel_name: channel_name,
-                channel_subscriber: channel_subscriber,
-                channel_by: channel_by,
-                channel_link: channel_link,
-                collageImages: collageImages,
-                channel_image: channelname
+    const { finalDataArray, pages, channel_name, channel_subscriber, channel_by, channel_link, collageImages } = await rawResponse.json();
+    return {
+        props: {
+            video_collection: finalDataArray,
+            pages: pages,
+            channel_name: channel_name,
+            channel_subscriber: channel_subscriber,
+            channel_by: channel_by,
+            channel_link: channel_link,
+            collageImages: collageImages,
+            channel_image: channelname
 
-            }
         }
+    }
 }
 
 

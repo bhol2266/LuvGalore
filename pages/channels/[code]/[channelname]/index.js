@@ -14,7 +14,7 @@ import { updateViewChannels_Cookie } from '../../../../config/utils';
 
 
 
-function Index({ video_collection, pages, channel_name, channel_link, collageImages, channel_subscriber, channel_by, channel_image }) {
+function Index({ video_collection, pages, channel_name, channel_link, collageImages, channel_subscriber, channel_by,channel_image }) {
 
     const router = useRouter();
     const { code, channelname, isReady } = router.query
@@ -83,7 +83,6 @@ function Index({ video_collection, pages, channel_name, channel_link, collageIma
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-
 
     return (
         <>
@@ -207,36 +206,35 @@ export async function getStaticPaths() {
 
 
 
-
 export async function getStaticProps(context) {
 
     const { code, channelname } = context.params;
 
     const parcelData = { url: `https://spankbang.party/${code}/channel/${channelname}/` };
-    const API_URL = `${process.env.BACKEND_URL}getChannelVideos`;
-    const rawResponse = await fetch(API_URL, {
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        method: 'POST',
-        body: JSON.stringify(parcelData),
-    });
+        const API_URL = `${process.env.BACKEND_URL}getChannelVideos`;
+        const rawResponse = await fetch(API_URL, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            method: 'POST',
+            body: JSON.stringify(parcelData),
+        });
 
-    const { finalDataArray, pages, channel_name, channel_subscriber, channel_by, channel_link, collageImages } = await rawResponse.json();
-    return {
-        props: {
-            video_collection: finalDataArray,
-            pages: pages,
-            channel_name: channel_name,
-            channel_subscriber: channel_subscriber,
-            channel_by: channel_by,
-            channel_link: channel_link,
-            collageImages: collageImages,
-            channel_image: channelname
+        const { finalDataArray, pages, channel_name, channel_subscriber, channel_by, channel_link, collageImages,channel_image } = await rawResponse.json();
+        return {
+            props: {
+                video_collection: finalDataArray,
+                pages: pages,
+                channel_name: channel_name,
+                channel_subscriber: channel_subscriber,
+                channel_by: channel_by,
+                channel_link: channel_link,
+                collageImages: collageImages,
+                channel_image: channel_image,
 
+            }
         }
-    }
 }
 
 

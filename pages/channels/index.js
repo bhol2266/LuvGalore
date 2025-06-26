@@ -203,9 +203,9 @@ function Index({ video_collection, trendingChannels, newChannels }) {
                             <Link key={obj.channelName} href={href}>  <div className='  relative hover:scale-105 transform transition duration-150 rounded   aspect-box  ' >
                                 <img
                                     className='object-cover w-full rounded-[15px] border-[1px] border-gray-200 '
-                                    alt={obj.channelName}
-                                    src={`${process.env.CLOUDFLARE_STORAGE}Chutlunds_channels_images/${channelName.replace(/ /g, "_").toLowerCase()}.jpg`}
-                                    loading="lazy"
+                                       alt={obj.imageUrl}
+                                        src={obj.imageUrl}
+                                        loading="lazy"
                                 ></img>
                                 <h2 className='mt-1 font-inter rounded-b font-medium  text-[12px]  sm:text-md lg:text-lg 2xl:text-2xl  px-1  pb-3 lg:pb-4 w-full text-center   text-theme '>{obj.channelName}</h2>
                             </div>

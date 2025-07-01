@@ -416,7 +416,7 @@ function Navbar() {
                 ) : (
                     <Link href="/membership" legacyBehavior>
                         <a
-                            className="rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder text-nowrap bg-theme_yellow text-semiblack hover:scale-105 transition-transform duration-300 cursor-pointer"
+                            className="rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder text-nowrap bg-[#FFBB00] text-semiblack hover:scale-105 transition-transform duration-300 cursor-pointer"
                             rel="dofollow"
                         >
                             Join Now
@@ -536,7 +536,7 @@ function Navbar() {
                                 <Link href="/membership" legacyBehavior>
                                     <a rel="dofollow">
                                         <button
-                                            className="rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder hover:scale-105 transition-transform duration-300 text-nowrap bg-theme_yellow text-semiblack"
+                                            className="rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder hover:scale-105 transition-transform duration-300 text-nowrap bg-[#FFBB00] text-semiblack"
                                         >
                                             Join Now
                                         </button>

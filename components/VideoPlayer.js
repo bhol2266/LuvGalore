@@ -17,6 +17,7 @@ import { UserAuth } from "../context/AuthContext";
 import VideoThumbnail from './VideoThumbnail';
 import { useMediaQuery } from 'react-responsive';
 import Link from 'next/link';
+import { isMembershipActive } from '../config/utils';
 
 
 

@@ -4,9 +4,9 @@ import { useContext, useEffect, useRef, useState, } from 'react';
 import ReactCountryFlag from "react-country-flag";
 import { UserAuth } from "../context/AuthContext";
 import videosContext from '../context/videos/videosContext';
-import { MdLiveTv } from "react-icons/md";
-
+import { calculateDaysLeft, isMembershipActive } from "../config/utils";
 import { Fragment } from 'react';
+import { MdLiveTv } from "react-icons/md";
 
 
 
@@ -43,12 +43,11 @@ function Navbar() {
     const { user, setUser, setLoginModalVisible } = UserAuth();
 
 
-
     const router = useRouter();
     const currentPath = router.pathname;
 
     const context = useContext(videosContext);
-    const { currentLocation, countryBlocked } = context;
+    const { currentLocation, countryBlocked, daysLeft, setDaysLeft, isMember, setIsMember } = context;
 
     const [location, setlocation] = useState(currentLocation)
     const [searchKey, setsearchKey] = useState('')
@@ -58,6 +57,14 @@ function Navbar() {
 
         if (localStorage.getItem("location") && !currentLocation) {
             setlocation(JSON.parse(localStorage.getItem("location")))
+        }
+
+
+        const isActive = isMembershipActive();
+        setIsMember(isActive);
+
+        if (isActive) {
+            setDaysLeft(calculateDaysLeft());
         }
 
 
@@ -390,21 +397,32 @@ function Navbar() {
                         rel="dofollow"
                     >
                         <MdLiveTv className='h-5 w-5 text-gray-700' />
-                       
+
                         <span className={`sm:text-xl xl:text-[28px] text-md text-semiblack text-center mb-0`}>
                             Channels
                         </span>
                     </a>
                 </Link>
 
-                <Link href='/membership' legacyBehavior>
-                    <a
-                        className='sm:text-md text-sm text-white rounded-[22px] text-center px-3 p-1 m-1 bg-theme_red hover:scale-105 transition-transform duration-30 block_popunder'
-                        rel="dofollow"
+                {isMember ? (
+                    <button
+                        className="rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-xs block_popunder text-nowrap bg-green-500 text-white"
+                        disabled
+                        aria-disabled="true"
+                        tabIndex={-1}
                     >
-                        Join Now
-                    </a>
-                </Link>
+                        ✔ Member - {daysLeft} day{daysLeft === 1 ? '' : 's'} left
+                    </button>
+                ) : (
+                    <Link href="/membership" legacyBehavior>
+                        <a
+                            className="rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder text-nowrap bg-theme_yellow text-semiblack hover:scale-105 transition-transform duration-300 cursor-pointer"
+                            rel="dofollow"
+                        >
+                            Join Now
+                        </a>
+                    </Link>
+                )}
             </div>
 
             {/* Large Sreeen NavBar  */}
@@ -507,16 +525,24 @@ function Navbar() {
                                     <button className='font-inter bg-green-500 py-[5px] px-8  rounded-[22px] mr-3' onClick={signOut_method}>Logout</button>
                                 </div>
                             }
-                            <Link href='/membership' legacyBehavior>
-                                <a
-                                    rel="dofollow" 
+                            {isMember ? (
+                                <button
+                                    className="rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder text-nowrap bg-green-500 text-white "
+                                    disabled
                                 >
-                                    <button className="bg-red-500 text-white rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder hover:scale-105 transition-transform duration-300 text-nowrap">
-                                        Join Now
-                                    </button>
-                                </a>
-                            </Link>
-
+                                    ✔ Member - {daysLeft} day{daysLeft === 1 ? '' : 's'} left
+                                </button>
+                            ) : (
+                                <Link href="/membership" legacyBehavior>
+                                    <a rel="dofollow">
+                                        <button
+                                            className="rounded-[22px] font-semibold text-center px-5 p-1.5 m-1 text-md block_popunder hover:scale-105 transition-transform duration-300 text-nowrap bg-theme_yellow text-semiblack"
+                                        >
+                                            Join Now
+                                        </button>
+                                    </a>
+                                </Link>
+                            )}
 
 
 

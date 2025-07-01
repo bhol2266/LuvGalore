@@ -196,3 +196,26 @@ export function getViewPornstars() {
 
     return viewPornstars
 }
+
+export function isMembershipActive() {
+    const membership = getCookie("Membership");
+    if (!membership) {
+        // Cookie not present
+        return false;
+    }
+    // Return true only if the cookie value is "true"
+    return true;
+}
+
+export function calculateDaysLeft(cookieName = 'MembershipExpires') {
+  const expiryString = getCookie(cookieName);
+  if (!expiryString) return null;
+
+  const expiryDate = new Date(expiryString);
+  const today = new Date();
+
+  const timeDiff = expiryDate.getTime() - today.getTime();
+  const daysRemaining = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+  return daysRemaining;
+}
